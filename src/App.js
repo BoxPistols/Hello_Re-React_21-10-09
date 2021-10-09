@@ -23,11 +23,16 @@ export default function App() {
   const onClickOpen = () => setOpen(!open)
   console.log(open)
 
+  const data = [...Array(200).keys()]
+  console.log(data)
+  data.forEach(() => {
+    console.log('...')
+  })
   return (
     <div className="App">
-      <div class="container">
-        <div class="row">
-          <div class="column column-80">
+      <div className="container">
+        <div className="row">
+          <div className="column column-80">
             <h1>Hello Re:React</h1>
             <section className="section">
               {/* Counter */}
@@ -37,13 +42,13 @@ export default function App() {
             </section>
           </div>
         </div>
-        <div class="row">
-          <div class="column column-80">
+        <div className="row">
+          <div className="column column-80">
             <section className="section">
               {/* Form */}
               {text}
               <input onChange={onChangeInput} value={text} />
-              <button class="button button-outline" onClick={onClickOpen}>
+              <button className="button button-outline" onClick={onClickOpen}>
                 View Child
               </button>
               <ChildArea open={open} />

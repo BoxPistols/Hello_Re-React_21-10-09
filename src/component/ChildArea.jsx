@@ -1,5 +1,6 @@
 export const ChildArea = (props) => {
   const { open } = props
+  console.log('Childだ')
   return (
     <>
       {open ? (
