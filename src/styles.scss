@@ -1,9 +1,20 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  padding: 8vh 4vw;
 }
 
+.container .row{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
 button{
   margin: 8px;
 }
-  
+
+section.section{
+  padding: 2vh 2vw;
+}
